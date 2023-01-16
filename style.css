@@ -10,14 +10,14 @@ body{
     /* width: 100%; */
 }
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
   }
 
 /* Navbar */
 .navbar{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 70px;
 }
@@ -57,9 +57,9 @@ body{
 
 .prebook-section{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
+
 } 
 
 .prebook-title{
