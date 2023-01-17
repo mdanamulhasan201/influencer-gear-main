@@ -36,8 +36,9 @@ body{
 }
 .items ul{
     display: flex;
+    align-items: center;
     list-style: none;
-    gap: 15px;
+    gap: 35px;
 }
 .items a{
     text-decoration: none;
@@ -47,10 +48,10 @@ body{
    
 }
 
- .search{
+ /* .search{
     width: 19px;
     height: 19px;
-}
+} */
 
 
 /* main */
@@ -98,6 +99,7 @@ body{
     background-image: url(images/circle\ design.svg);
     background-repeat: no-repeat;
     background-size: contain;
+    margin-bottom: 80px;
    
    
 }
@@ -106,12 +108,82 @@ body{
 /* sponsor */
 .sponsorr{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit,         minmax(100px, 1fr));
+    align-items: center;
     justify-content: center;
     gap: 62px;
-    margin-top: 100px;
-    /* width: 100%; */
+    padding: 20px;
 
+
+}
+
+/* popular */
+
+.products{
+    display: flex;
+    justify-content: center;
+    /* justify-items: center; */
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.popular-section-title{
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 90px;
+}
+.products-cart{
+    width: 310px;
+    height: 450px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 17px 17px;
+}
+
+.products-cart img {
+    width: 310px;
+    height: 260px;
+}
+
+.cart-info h3{
+    font-weight: 500;
+    font-size: 28px;
+    color: #18191F;
+    margin-top: 12px;
+}
+.cart-info .cost{
+    font-weight: 400;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.87);
+    margin-top: 6px;
+}
+span {
+    color: #FB8200;
+    margin-bottom: 5px;
+    width: 11.07px;
+    gap: 100px;
+    height: 10.32px;
+   
+}
+
+.rateing{
+    font-weight: 700;
+    font-size: 14px;
+    color: #5E6366;
+}
+
+.cart-info p{
+    margin-top: 5px;
+    line-height: 143%;
+    font-weight: 700;
+    font-size: 14px;
+    color: #787885;
+    letter-spacing: 0.018em;
+}
+
+.more{
+    text-align: end;
 }
 
 
@@ -144,6 +216,7 @@ body{
     }
 .items{
     flex-direction: column;
+    margin-top: 20px;
 }
     .items ul{
         flex-direction: column;
@@ -169,16 +242,30 @@ body{
         margin-bottom: 20px;
     }
 
+    hr{
+
+        margin-top: 40px;
+    }
+
     .sponsorr{
     margin-left: 200px;
         
         
     }
+    .popular-section-title{
+        margin-left: 120px;
+    }
+    .popular-container{
+        
+        margin-top: 20px;
+        margin-left: 150px;
+
+    }
 }
 
 
 /* Tablet mobile */
-@media only screen and (min-width: 577px) and (max-width: 1199px) {
+@media only screen and (min-width: 577px) and (max-width: 1399px) {
     .container {
       padding: 0 20px;
     }
